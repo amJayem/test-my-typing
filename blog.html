@@ -17,52 +17,99 @@
       </navbar>
     <main >
         <div>
-            <div class="accordion" id="accordionExample">
+            <div class="accordion fs-4" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Difference between local Storage and session storage
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ul>
+                        <li><strong>localStorage</strong></li>
+                        <ul>
+                            <li>Web storage can be viewed simplistically as an improvement on cookies, providing much greater storage capacity</li>
+                            <li>The data is not sent back to the server for every HTTP request</li>
+                            <li>The data stored in localStorage persists until explicitly deleted. Changes made are saved and available for all current and future visits to the site.</li>
+                            <li>It works on same-origin policy. So, data stored will only be available on the same origin.</li>
+                        </ul>
+                      </ul>
+                      <ul>
+                        <li><strong>sessionStorage</strong></li>
+                        <ul>
+                            <li>It is similar to localStorage.</li>
+                            <li>The data is not persistent i.e. data is only available during the page session</li>
+                            <li>The data is available only inside the window/tab in which it was set.</li>
+                            <li>Like localStorage, it works on same-origin policy. So, data stored will only be available on the same origin.</li>
+                        </ul>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Difference between Global scope and block scope
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ul>
+                        <li><strong>Block scope</strong></li>
+                        <ul>
+                            Before ES6 (2015), JavaScript had only Global Scope and Function Scope. ES6 introduced two important new JavaScript keywords: let and const. These two keywords provide Block Scope in JavaScript.Variables declared inside a { } block cannot be accessed from outside the block.
+                        </ul>
+                      </ul>
+                      <ul>
+                        <li><strong>Global scope</strong></li>
+                        <ul>
+                            The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.
+                        </ul>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       How javaScript event loop work?
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ul>
+                        <li>The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. </li>
+                        <ul>
+                            <li>The <strong>call stack</strong> is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack.</li>
+                            <li>
+                                The <strong>event queue</strong> is responsible for sending new functions to the stack for processing. It follows the queue data structure to maintain the correct sequence in which all operations should be sent for execution.</li>
+                        </ul>
+                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                       Types of undefined in javaScript
                     </button>
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ul>
+                        <li><strong>8 ways to get undefined</strong></li>
+                        <ol>
+                            <li>Variable that is not initialized</li>
+                            <li>function with no return</li>
+                            <li>parameter that is not passed</li>
+                            <li>if return has nothing to return</li>
+                            <li>property doesn't exist on an array</li>
+                            <li>accessing array elements outside of the index range</li>
+                            <li>deleting on element inside an array</li>
+                            <li>set a value directly to undefined</li>
+                        </ol>
+                      </ul>
                     </div>
                   </div>
                 </div>
